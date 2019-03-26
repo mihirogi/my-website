@@ -1,0 +1,52 @@
+@import "scss/color";
+@import "scss/font";
+@import "scss/spacer";
+
+nav {
+  text-align: center;
+  background-color: $primaryColor;
+  @include getMargin(zero, zero, small, zero);
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 55px;
+    @include getFontSize(midium);
+    width: 33.3%;
+    color: black;
+    border-bottom: solid 5px $primaryColor;
+  }
+
+  .link-active {
+    border-bottom: solid 5px $secondaryColor;
+  }
+
+  // マウスデバイスのときのみ、hoverを有効にする
+  @media(hover: hover) {
+    a:hover {
+      background-color: $primaryColorLight;
+      border-bottom: solid 5px $primaryColorLight;
+    }
+  }
+}
+
+h1 {
+  @include getFontSize(xxLarge);
+}
+
+h2 {
+  @include getFontSize(xLarge);
+}
+
+h3 {
+  @include getFontSize(large);
+}
+
+h4 {
+  @include getFontSize(midium);
+}
+
+p {
+  @include getFontSize(small);
+}
+

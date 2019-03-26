@@ -1,0 +1,11 @@
+@mixin getFontSize($size:maxPercentage) {
+  $sizeMap: (
+    small:16px,
+    midium:20px,
+    large:24px,
+    xLarge:28px,
+    xxLarge:32px,
+    maxPercentage:100%
+  );
+  font-size: map-get($sizeMap, $size);
+}

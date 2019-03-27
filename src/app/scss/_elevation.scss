@@ -1,0 +1,12 @@
+// http://www.tohoho-web.com/css/prop/box-shadow.htm
+
+$elevationColor: rgba(0, 0, 0, 0.2);
+
+@mixin getElevation($strength) {
+  $elevationMap: (
+    weak:0px 2px 5px $elevationColor,
+    middle:0px 4px 5px 0px $elevationColor,
+    strong:0px 6px 5px $elevationColor
+  );
+  box-shadow: map-get($elevationMap, $strength);
+}

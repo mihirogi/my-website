@@ -1,10 +1,12 @@
 @import "scss/color";
 @import "scss/font";
 @import "scss/spacer";
+@import "scss/elevation";
 
 nav {
   text-align: center;
   background-color: $primaryColor;
+  @include getElevation(weak);
   @include getMargin(zero, zero, small, zero);
 
   a {
@@ -29,24 +31,3 @@ nav {
     }
   }
 }
-
-h1 {
-  @include getFontSize(xxLarge);
-}
-
-h2 {
-  @include getFontSize(xLarge);
-}
-
-h3 {
-  @include getFontSize(large);
-}
-
-h4 {
-  @include getFontSize(midium);
-}
-
-p {
-  @include getFontSize(small);
-}
-

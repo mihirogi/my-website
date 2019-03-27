@@ -1,0 +1,10 @@
+@import "../scss/style";
+
+article {
+  width: 100%;
+  @include getPadding(zero, zero, large, zero);
+
+  section {
+    @include defaultSelectionStyle();
+  }
+}

@@ -1,0 +1,32 @@
+@import "font";
+@import "elevation";
+@import "color";
+@import "spacer";
+
+@mixin defaultSelectionStyle() {
+  @include getFontSize(midium);
+  @include getElevation(weak);
+  @include getMargin(large, large, zero, large);
+  @include getPadding(large, large, large, large);
+
+  background-color: $surface;
+  color: $onSurface;
+
+  h2 {
+    @include getFontSize(xLarge);
+    @include getPadding(zero, zero, zero, zero);
+    @include getMargin(zero, zero, small, zero);
+  }
+
+  h3 {
+    @include getFontSize(large);
+    @include getPadding(zero, zero, zero, zero);
+    @include getMargin(zero, zero, small, zero);
+  }
+
+  p {
+    @include getFontSize(small);
+    @include getPadding(zero, zero, zero, zero);
+    @include getMargin(zero, zero, zero, small);
+  }
+}

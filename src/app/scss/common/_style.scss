@@ -5,9 +5,9 @@
 
 @mixin defaultSelectionStyle() {
   @include getFontSize(midium);
-  @include getElevation(weak);
+  //@include getElevation(weak);
   @include getMargin(large, large, zero, large);
-  @include getPadding(large, large, large, large);
+  @include getPadding(xxlarge, xxlarge, xxlarge, xxlarge);
 
   background-color: $surface;
   color: $onSurface;

@@ -3,7 +3,9 @@
     zero:0px,
     small:8px,
     midium:12px,
-    large:16px
+    large:16px,
+    xlarge:20px,
+    xxlarge:24px
   );
   padding: map_get($paddingMap, $top) map_get($paddingMap, $right) map_get($paddingMap, $bottom) map_get($paddingMap, $left);
 }

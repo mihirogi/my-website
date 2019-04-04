@@ -2,8 +2,8 @@
 
 nav {
   text-align: center;
-  background-color: $primaryColor;
-  @include getElevation(weak);
+  background-color: $secondaryColor;
+  //@include getElevation(weak);
   @include getMargin(zero, zero, small, zero);
 
   a {
@@ -12,12 +12,12 @@ nav {
     line-height: 55px;
     @include getFontSize(midium);
     width: 33.3%;
-    color: black;
-    border-bottom: solid 5px $primaryColor;
+    color: $onSurface;
+    border-bottom: solid 5px $secondaryColor;
   }
 
   .link-active {
-    border-bottom: solid 5px $secondaryColor;
+    border-bottom: solid 5px white;
   }
 
   // マウスデバイスのときのみ、hoverを有効にする

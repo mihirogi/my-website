@@ -3,7 +3,7 @@
 nav {
   text-align: center;
   background-color: $secondaryColor;
-  //@include getElevation(weak);
+  @include getElevation(weak);
   @include getMargin(zero, zero, small, zero);
 
   a {
@@ -17,7 +17,7 @@ nav {
   }
 
   .link-active {
-    border-bottom: solid 5px white;
+    border-bottom: solid 5px $onSurface;
   }
 
   // マウスデバイスのときのみ、hoverを有効にする

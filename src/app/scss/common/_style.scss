@@ -3,14 +3,15 @@
 @import "color";
 @import "spacer";
 
-@mixin defaultSelectionStyle() {
-  @include getFontSize(midium);
+@mixin defaultSectionStyle() {
+  @include getFontSize(small);
   @include getElevation(weak);
   @include getMargin(large, large, zero, large);
-  @include getPadding(large, large, large, large);
+  @include getPadding(xxlarge, xxlarge, xxlarge, xxlarge);
 
   background-color: $surface;
   color: $onSurface;
+  border-radius: 20px;
 
   h2 {
     @include getFontSize(xLarge);

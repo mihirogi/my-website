@@ -2,7 +2,7 @@
 
 nav {
   text-align: center;
-  background-color: $primaryColor;
+  background-color: $secondaryColor;
   @include getElevation(weak);
   @include getMargin(zero, zero, small, zero);
 
@@ -11,20 +11,20 @@ nav {
     text-decoration: none;
     line-height: 55px;
     @include getFontSize(midium);
-    width: 33.3%;
-    color: black;
-    border-bottom: solid 5px $primaryColor;
+    width: 50%;
+    color: $onSurface;
+    border-bottom: solid 5px $secondaryColor;
   }
 
   .link-active {
-    border-bottom: solid 5px $secondaryColor;
+    border-bottom: solid 5px $secondaryColorDark;
   }
 
   // マウスデバイスのときのみ、hoverを有効にする
   @media(hover: hover) {
     a:hover {
-      background-color: $primaryColorLight;
-      border-bottom: solid 5px $primaryColorLight;
+      background-color: $secondaryColorLight;
+      border-bottom: solid 5px $secondaryColorLight;
     }
   }
 }

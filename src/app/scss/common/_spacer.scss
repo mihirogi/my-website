@@ -1,9 +1,11 @@
 @mixin getPadding($top, $right, $bottom, $left) {
   $paddingMap: (
     zero:0px,
-    small:8px,
-    midium:12px,
-    large:16px
+    small:16px,
+    midium:20px,
+    large:24px,
+    xlarge:28px,
+    xxlarge:32px
   );
   padding: map_get($paddingMap, $top) map_get($paddingMap, $right) map_get($paddingMap, $bottom) map_get($paddingMap, $left);
 }
@@ -11,9 +13,11 @@
 @mixin getMargin($top, $right, $bottom, $left) {
   $paddingMap: (
     zero:0px,
-    small:8px,
-    midium:12px,
-    large:16px
+    small:16px,
+    midium:20px,
+    large:24px,
+    xlarge:28px,
+    xxlarge:32px
   );
   margin: map_get($paddingMap, $top) map_get($paddingMap, $right) map_get($paddingMap, $bottom) map_get($paddingMap, $left);
 }

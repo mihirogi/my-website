@@ -20,7 +20,7 @@ jobs:
           command: npm install
       - run:
           name: Build Production
-          command: npm run build --prod
+          command: npm run build
       - save_cache:
           paths:
             - node_modules
